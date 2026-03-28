@@ -9,7 +9,7 @@ import plotly.express as px
 def load_and_process_data():
     # Load the data (Make sure your CSV file is in the same folder as this script)
     # Update the filename below if yours is named differently
-    df = pd.read_csv('/content/APL_Logistics (1).csv', encoding='latin1')
+    df = pd.read_csv('APL_Logistics (1).csv', encoding='latin1')
 
     # Drop rows with missing values to ensure clean math
     df = df.dropna(subset=['Days for shipping (real)', 'Days for shipment (scheduled)'])
